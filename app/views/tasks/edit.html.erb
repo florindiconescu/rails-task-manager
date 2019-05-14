@@ -1,0 +1,15 @@
+<%= form_for (@task) do |f| %>
+  <p><%= f.label :title %></p>
+  <p><%= f.text_field :title %></p>
+
+  <p><%= f.label :details %></p>
+  <p><%= f.text_field :details %></p>
+
+  <p> <%= f.check_box :completed %>
+  <%= f.label :completed %></p>
+  <p><%= f.submit "Update task"%></p>
+<br>
+<% end %>
+<p><%= link_to 'Back to the task', task_path %></p>
+
+
